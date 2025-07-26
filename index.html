@@ -72,11 +72,15 @@
       <div class="flex justify-between items-center py-4">
         <!-- Logo -->
         <div class="flex items-center">
-          <img src="https://automatics.dev/assets/images/logo.svg" alt="automatics Logo" class="h-8 w-auto">
+          <!-- Header Logo Link -->
+          <a href="https://automatics.dev/">
+            <img src="https://automatics.dev/assets/images/logo.svg" alt="Automatics Logo" class="h-8 w-auto">
+          </a>
         </div>
 
         <!-- Desktop Navigation -->
         <div class="hidden md:flex items-center space-x-8">
+          <a href="https://automatics.dev/" class="text-gray-700 hover:text-gray-900 transition-colors">Automatics</a>
           <a href="#about" class="text-gray-700 hover:text-gray-900 transition-colors">About</a>
           <a href="#services" class="text-gray-700 hover:text-gray-900 transition-colors">Services</a>
           <a href="#pricing" class="text-gray-700 hover:text-gray-900 transition-colors">Pricing</a>
@@ -86,7 +90,7 @@
 
         <!-- CTA Button -->
         <div class="flex items-center">
-          <button class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors">
+          <button onclick="window.location.href='https://automatics.dev/#contact'" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors">
             Book A Call
           </button>
         </div>
@@ -104,6 +108,7 @@
       <!-- Mobile Navigation Menu -->
       <div id="mobile-menu" class="md:hidden hidden">
         <div class="px-2 pt-2 pb-3 space-y-1 bg-white border-t border-gray-200">
+          <a href="https://automatics.dev/" class="block px-3 py-2 text-gray-700 hover:text-gray-900 hover:bg-gray-50 rounded-md transition-colors">Automatics</a>
           <a href="#about" class="block px-3 py-2 text-gray-700 hover:text-gray-900 hover:bg-gray-50 rounded-md transition-colors">About</a>
           <a href="#services" class="block px-3 py-2 text-gray-700 hover:text-gray-900 hover:bg-gray-50 rounded-md transition-colors">Services</a>
           <a href="#pricing" class="block px-3 py-2 text-gray-700 hover:text-gray-900 hover:bg-gray-50 rounded-md transition-colors">Pricing</a>
@@ -142,8 +147,8 @@
         <span class="block">Save both.</span>
       </h1>
       <p class="text-xl md:text-2xl text-slate-700 mb-12 max-w-4xl mx-auto leading-relaxed">
-        We help B2B SMBs reclaim precious time by automating processes and building custom digital solutions. No
-        in-house tech team? Overwhelmed by manual work? We’ve got you covered with efficient technology that lets you
+        We help SMEs reclaim precious time by automating processes and building custom digital solutions. No
+        in-house tech team? Overwhelmed by manual work? We've got you covered with efficient technology that lets you
         focus on growing your business.
       </p>
       <button
@@ -163,7 +168,7 @@
             The Thinking Partner Behind Every Great Solution
           </h2>
           <p class="text-xl text-slate-600 leading-relaxed mb-8">
-            At <strong>automatics</strong>, we’re more than just software engineers – we’re your dedicated technology partners. Founded
+            At <strong>automatics</strong>, we're more than just software engineers – we're your dedicated technology partners. Founded
             by a solution architect and a product designer, we only take on projects in industries where we have
             first-hand experience (legaltech, fintech, e-commerce). This means we speak your language and
             understand your challenges from day one.
@@ -173,7 +178,7 @@
           <div class="space-y-4">
             <div class="flex items-center">
               <div class="w-2 h-2 bg-blue-600 rounded-full mr-4"></div>
-              <span class="text-slate-700">No Management Overhead: You won’t need to manage yet another team. We handle everything so you can focus on your business.</span>
+              <span class="text-slate-700">No Management Overhead: You won't need to manage yet another team. We handle everything so you can focus on your business.</span>
             </div>
             <div class="flex items-center">
               <div class="w-2 h-2 bg-blue-600 rounded-full mr-4"></div>
@@ -181,7 +186,7 @@
             </div>
             <div class="flex items-center">
               <div class="w-2 h-2 bg-blue-600 rounded-full mr-4"></div>
-              <span class="text-slate-700">Results-Driven Approach: We don’t sell “seats” or bill hours – we deliver outcomes. </span>
+              <span class="text-slate-700">Results-Driven Approach: We don't sell "seats" or bill hours – we deliver outcomes. </span>
             </div>
           </div>
         </div>
@@ -209,7 +214,7 @@
           Tailored Solutions for Your Business
         </h2>
         <p class="text-xl text-slate-600 max-w-4xl mx-auto leading-relaxed">
-          One size doesn’t fit all in business. That’s why we craft solutions tailored to your needs – whether it’s
+          One size doesn't fit all in business. That's why we craft solutions tailored to your needs – whether it's
           automating a tedious workflow, designing an intuitive app interface, or building a powerful content
           management system. We leverage the latest technology (including AI, low-code, and no-code platforms) to
           deliver results quickly and effectively.
@@ -229,8 +234,8 @@
           </div>
           <h3 class="text-2xl font-bold mb-4 text-slate-900">Smart Process Automation</h3>
           <p class="text-slate-600 leading-relaxed">
-            Eliminating repetitive tasks and manual processes that slow you down. We’ll integrate smart automation
-            (and even AI where it makes sense) to boost your team’s efficiency.
+            Eliminating repetitive tasks and manual processes that slow you down. We'll integrate smart automation
+            (and even AI where it makes sense) to boost your team's efficiency.
           </p>
         </div>
 
@@ -309,7 +314,7 @@
         <!-- Right Content -->
         <div>
           <h2 class="text-4xl md:text-5xl font-bold mb-8 text-slate-900">
-            Our Process – “Plan, Build, Ship” in Monthly Iterations
+            Our Process – "Plan, Build, Ship" in Monthly Iterations
           </h2>
           <p class="text-xl text-slate-600 leading-relaxed mb-8">
             We follow a simple yet effective process to deliver continuous value to your business, iterating monthly so
@@ -328,17 +333,17 @@
             <div class="flex items-center">
               <div class="w-2 h-2 bg-blue-600 rounded-full mr-4"></div>
               <span class="text-slate-700"><strong>Build:</strong> Our team gets to work implementing the solution.
-                Whether we’re configuring an automation bot, designing a new interface, or developing a custom feature,
+                Whether we're configuring an automation bot, designing a new interface, or developing a custom feature,
                 we execute the tasks using the best tools available (including AI assistance or low-code platforms when
-                suitable). Throughout this stage, we handle all the details – you won’t be stuck in status meetings or
+                suitable). Throughout this stage, we handle all the details – you won't be stuck in status meetings or
                 micromanaging tasks.</span>
             </div>
             <div class="flex items-center">
               <div class="w-2 h-2 bg-blue-600 rounded-full mr-4"></div>
               <span class="text-slate-700"><strong>Ship:</strong> At the end of the month, we deliver the completed
                 improvements and integrate them into your business. We review the results against the OKRs we set,
-                confirm the KPIs are met, and gather your feedback. Then it’s straight into the next cycle, using what
-                we learned to plan the following month’s tasks. This iterative approach ensures you get tangible results
+                confirm the KPIs are met, and gather your feedback. Then it's straight into the next cycle, using what
+                we learned to plan the following month's tasks. This iterative approach ensures you get tangible results
                 quickly and consistently, with the flexibility to adjust as we go.</span>
             </div>
           </div>
@@ -975,59 +980,55 @@
       <!-- Purple gradient background -->
       <div class="absolute inset-0 bg-gradient-to-br via-transparent to-blue-600/20"></div>
       
-      <div class="max-w-7xl mx-auto relative z-10">
-        <div class="grid lg:grid-cols-2 gap-12 items-center">
-          <!-- Left Section - Contact Choice -->
-          <div class="bg-slate-800 p-8 rounded-2xl shadow-xl border border-slate-700">
-            <h2 class="text-3xl font-bold text-white mb-4">Choose who you talk to</h2>
-            <p class="text-slate-300 mb-8">An expert from automatics will reach out to discuss your needs.</p>
-            
-            <div class="grid md:grid-cols-2 gap-6">
-              <!-- Design Option -->
-              <div class="bg-slate-700 p-6 rounded-xl border border-slate-600 hover:border-blue-500 transition-colors">
-                <div class="flex items-center mb-4">
-                  <div class="w-10 h-10 bg-blue-500 rounded-lg flex items-center justify-center mr-3">
-                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zM21 5a2 2 0 00-2-2h-4a2 2 0 00-2 2v12a4 4 0 004 4h4a4 4 0 004-4V5z"></path>
-                    </svg>
-                  </div>
-                  <div>
-                    <h3 class="text-white font-semibold flex items-center">
-                      UI/UX Design
-                      <svg class="w-4 h-4 ml-2 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                      </svg>
-                    </h3>
-                  </div>
+      <div class="max-w-3xl mx-auto relative z-10 flex flex-col gap-10">
+        <!-- Contact Choice Block -->
+        <div class="bg-slate-800 p-8 rounded-2xl shadow-xl border border-slate-700">
+          <h2 class="text-3xl font-bold text-white mb-4 text-center">Choose who you talk to</h2>
+          <p class="text-slate-300 mb-8 text-center">An expert from automatics will reach out to discuss your needs.</p>
+          <div class="grid md:grid-cols-2 gap-6">
+            <!-- Design Option -->
+            <div class="bg-slate-700 p-6 rounded-xl border border-slate-600 hover:border-blue-500 transition-colors">
+              <div class="flex items-center mb-4">
+                <div class="w-10 h-10 bg-blue-500 rounded-lg flex items-center justify-center mr-3">
+                  <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zM21 5a2 2 0 00-2-2h-4a2 2 0 00-2 2v12a4 4 0 004 4h4a4 4 0 004-4V5z"></path>
+                  </svg>
                 </div>
-                <p class="text-slate-300 text-sm mb-4">Need help with interface design or user experience optimization?</p>
-                <button class="w-full bg-slate-600 text-white py-3 px-4 rounded-lg hover:bg-slate-500 transition-colors text-sm font-medium">
-                  Talk to a Designer
-                </button>
-              </div>
-
-              <!-- Engineer Option -->
-              <div class="bg-slate-700 p-6 rounded-xl border border-slate-600 hover:border-blue-500 transition-colors">
-                <div class="flex items-center mb-4">
-                  <div class="w-10 h-10 bg-blue-500 rounded-lg flex items-center justify-center mr-3">
-                    <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                <div>
+                  <h3 class="text-white font-semibold flex items-center">
+                    UI/UX Design
+                    <svg class="w-4 h-4 ml-2 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                     </svg>
-                  </div>
-                  <div>
-                    <h3 class="text-white font-semibold flex items-center">
-                      Engineering
-                      <svg class="w-4 h-4 ml-2 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                      </svg>
-                    </h3>
-                  </div>
+                  </h3>
                 </div>
-                <p class="text-slate-300 text-sm mb-4">Need help with a complex use case or proof-of-concept?</p>
-                <button class="w-full bg-slate-600 text-white py-3 px-4 rounded-lg hover:bg-slate-500 transition-colors text-sm font-medium">
-                  Talk to an Engineer
-                </button>
               </div>
+              <p class="text-slate-300 text-sm mb-4">Need help with interface design or user experience optimization?</p>
+              <button class="w-full bg-slate-600 text-white py-3 px-4 rounded-lg hover:bg-slate-500 transition-colors text-sm font-medium">
+                Talk to a Designer
+              </button>
+            </div>
+            <!-- Engineer Option -->
+            <div class="bg-slate-700 p-6 rounded-xl border border-slate-600 hover:border-blue-500 transition-colors">
+              <div class="flex items-center mb-4">
+                <div class="w-10 h-10 bg-blue-500 rounded-lg flex items-center justify-center mr-3">
+                  <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="text-white font-semibold flex items-center">
+                    Engineering
+                    <svg class="w-4 h-4 ml-2 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                  </h3>
+                </div>
+              </div>
+              <p class="text-slate-300 text-sm mb-4">Need help with a complex use case or proof-of-concept?</p>
+              <button class="w-full bg-slate-600 text-white py-3 px-4 rounded-lg hover:bg-slate-500 transition-colors text-sm font-medium">
+                Talk to an Engineer
+              </button>
             </div>
           </div>
         </div>
@@ -1040,7 +1041,10 @@
       <div class="grid md:grid-cols-4 gap-8 mb-12">
         <!-- Logo and Description -->
         <div class="md:col-span-2">
-          <img src="https://automatics.dev/assets/images/logo.svg" alt="automatics Logo" class="h-8 w-auto mb-4">
+          <!-- Footer Logo Link -->
+          <a href="https://automatics.dev/">
+            <img src="https://automatics.dev/assets/images/logo.svg" alt="Automatics Logo" class="h-8 w-auto mb-4">
+          </a>
           <p class="text-slate-600 mb-6 max-w-md">
             Empowering businesses with innovative solutions and cutting-edge technology.
           </p>
@@ -1050,6 +1054,7 @@
         <div>
           <h4 class="font-semibold mb-4 text-slate-900">Quick Links</h4>
           <ul class="space-y-2">
+            <li><a href="https://automatics.dev/" class="text-slate-600 hover:text-slate-900 transition-colors">Automatics</a></li>
             <li><a href="#about" class="text-slate-600 hover:text-slate-900 transition-colors">About</a></li>
             <li><a href="#services" class="text-slate-600 hover:text-slate-900 transition-colors">Services</a></li>
             <li><a href="#pricing" class="text-slate-600 hover:text-slate-900 transition-colors">Pricing</a></li>
