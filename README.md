@@ -14,10 +14,10 @@ automatics helps businesses reclaim precious time by automating processes and bu
 - **Process Section**: "Plan, Build, Ship" methodology explanation
 - **Services Section**: Four main service offerings with icons
 - **Tech Stack Section**: Interactive tabs showcasing technologies
-- **Pricing Section**: Three-tier subscription model
+- **Pricing Section**: Three-tier subscription model with pricing features
 - **CTO-as-a-Service**: Premium add-on service
 - **FAQ Section**: Common questions and answers
-- **Contact Section**: Dual-path contact options with testimonial
+- **Contact Section**: Dual-path contact options (Design/Engineering)
 - **Footer**: Company information and social links
 
 ### Design Features
@@ -26,12 +26,13 @@ automatics helps businesses reclaim precious time by automating processes and bu
 - **Interactive Elements**: Hover effects, transitions, and tab switching
 - **Accessibility**: Proper semantic HTML and ARIA labels
 - **Performance**: Optimized images and efficient CSS
+- **Navigation**: Smooth scrolling and mobile menu functionality
 
 ## 🛠️ Technologies Used
 
 ### Frontend
 - **HTML5**: Semantic markup structure
-- **Tailwind CSS**: Utility-first CSS framework
+- **Tailwind CSS**: Utility-first CSS framework (CDN)
 - **Vanilla JavaScript**: Interactive functionality
 - **SVG Icons**: Scalable vector graphics for icons
 
@@ -44,10 +45,11 @@ automatics helps businesses reclaim precious time by automating processes and bu
 
 ```
 automatics.dev/
-├── index.html          # Main website file
+├── index.html          # Main website file (1,214 lines)
 ├── browser-sync.js     # Development server configuration
 ├── package.json        # Node.js dependencies
 ├── package-lock.json   # Locked dependency versions
+├── .gitignore         # Git ignore rules
 └── README.md          # Project documentation
 ```
 
@@ -91,11 +93,11 @@ automatics.dev/
 
 3. **Start development server**
    ```bash
-   npm start
+   npm run serve
    ```
 
 4. **Open in browser**
-   Navigate to `http://localhost:3000`
+   Navigate to `http://localhost:8080`
 
 ### Development
 
@@ -103,7 +105,7 @@ The project uses Browser-Sync for live reloading during development:
 
 ```bash
 # Start development server with live reload
-npm run dev
+npm run serve
 
 # Build for production
 npm run build
@@ -257,6 +259,7 @@ This project is proprietary to automatics. All rights reserved.
 - **v1.0.0**: Initial release with all core sections
 - **v1.1.0**: Added contact section and pricing features
 - **v1.2.0**: Updated content and improved responsiveness
+- **v1.3.0**: Added navigation functionality and external links
 
 ---
 
