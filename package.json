@@ -1,0 +1,14 @@
+{
+  "name": "automatics.dev",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "browser-sync start --server --files '*.html, *.css, *.js' --port 8080 --open"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^3.0.4"
+  }
+}
